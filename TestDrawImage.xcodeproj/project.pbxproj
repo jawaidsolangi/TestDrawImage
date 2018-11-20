@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA195339218B0CFC00B75879 /* DrawImageClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA195338218B0CFC00B75879 /* DrawImageClass.swift */; };
+		FA27D8672192AD6800DF3AFB /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27D8662192AD6800DF3AFB /* NewViewController.swift */; };
 		FA9E90952182F854008A4A17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E90942182F854008A4A17 /* AppDelegate.swift */; };
 		FA9E90972182F854008A4A17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E90962182F854008A4A17 /* ViewController.swift */; };
 		FA9E909A2182F854008A4A17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9E90982182F854008A4A17 /* Main.storyboard */; };
@@ -15,6 +17,7 @@
 		FA9E90A22182F855008A4A17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9E90A02182F855008A4A17 /* LaunchScreen.storyboard */; };
 		FA9E90AD2182F855008A4A17 /* TestDrawImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E90AC2182F855008A4A17 /* TestDrawImageTests.swift */; };
 		FA9E90B82182F856008A4A17 /* TestDrawImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E90B72182F856008A4A17 /* TestDrawImageUITests.swift */; };
+		FABB7DEB218D7D650002DEBA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB7DEA218D7D650002DEBA /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA195338218B0CFC00B75879 /* DrawImageClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawImageClass.swift; sourceTree = "<group>"; };
+		FA27D8662192AD6800DF3AFB /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		FA9E90912182F854008A4A17 /* TestDrawImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDrawImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9E90942182F854008A4A17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA9E90962182F854008A4A17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		FA9E90B32182F855008A4A17 /* TestDrawImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDrawImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9E90B72182F856008A4A17 /* TestDrawImageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDrawImageUITests.swift; sourceTree = "<group>"; };
 		FA9E90B92182F856008A4A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABB7DEA218D7D650002DEBA /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 			children = (
 				FA9E90942182F854008A4A17 /* AppDelegate.swift */,
 				FA9E90962182F854008A4A17 /* ViewController.swift */,
+				FA27D8662192AD6800DF3AFB /* NewViewController.swift */,
+				FABB7DEA218D7D650002DEBA /* SettingViewController.swift */,
+				FA195338218B0CFC00B75879 /* DrawImageClass.swift */,
 				FA9E90982182F854008A4A17 /* Main.storyboard */,
 				FA9E909E2182F855008A4A17 /* Assets.xcassets */,
 				FA9E90A02182F855008A4A17 /* LaunchScreen.storyboard */,
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABB7DEB218D7D650002DEBA /* SettingViewController.swift in Sources */,
 				FA9E90972182F854008A4A17 /* ViewController.swift in Sources */,
 				FA9E909D2182F854008A4A17 /* TestDrawImage.xcdatamodeld in Sources */,
+				FA27D8672192AD6800DF3AFB /* NewViewController.swift in Sources */,
+				FA195339218B0CFC00B75879 /* DrawImageClass.swift in Sources */,
 				FA9E90952182F854008A4A17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,7 +449,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FP824382L;
 				INFOPLIST_FILE = TestDrawImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,7 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tech.amid.TestDrawImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -454,7 +468,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FP824382L;
 				INFOPLIST_FILE = TestDrawImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tech.amid.TestDrawImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
